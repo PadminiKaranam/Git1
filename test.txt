@@ -1,0 +1,7 @@
+class test
+{
+  public Static void main(String atrgs[])
+   {
+       System.out.println("This is my first commit");
+    }
+}
