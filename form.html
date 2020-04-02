@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+fieldset
+{
+width:40%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+ 
+ 
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border : none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity : 1;
+}
+
+/* add appropriate colors to fb, google and EPAM buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+ 
+}
+
+
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+ font-family: Georgia
+}
+
+.EPAM {
+  background-color:#FFD700;
+  color: white;
+
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #00CED1;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00CED1;
+}
+
+/* Two-column layout */
+.col{
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+.col2 {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:before{
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav {
+  background-color: #00CED1;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+ 
+
+p{
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color:white
+ 
+}
+p span {
+    background:#fff;
+    padding:0 10px;
+}
+#x {
+    position: relative;
+    float: right;
+    background: #00CED1;
+color: white;
+}
+
+ 
+}
+</style>
+</head>
+<body>
+<center>
+<fieldset>
+
+<ul class="nav"><img weidth="35" height="35" align="left" src="https://s.dou.ua/CACHE/images/img/events/new-epam-university-logo_bRuI88s/ea36183560f064880897ffd451b45ad3.png">
+<li align="center" style="font-family: Georgia;color:white">Sign in</li><button align="left" id = "x">x</button></ul>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+        <div class="col2">
+
+        <input style="border: solid black" type="text" name="username" placeholder="mail@example.com" required>
+        <input style="border: solid black" type="password" name="password" placeholder="password" required>
+        <input type="submit" value="SIGN IN">
+      </div>
+<br>
+    <div class="bottom-container">
+  <div class="row">
+   
+    <div class="col">
+      <a href="#" style="color:black;text-decoration:none;font-family: Arial" >Forgot your password?</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:black;text-decoration:none;font-family: Arial" >Register!</a>
+    </div>
+  </div>
+<br>
+<br>
+<p><span>or</span></p>
+</div>
+</div>
+ 
+     <div class="col2">
+        <a href="#" class="fb btn">
+          <center><i class="fa fa-facebook fa-fw"></i> </center>
+         </a>
+       
+        <a href="#" class="google btn" ><center><i class="fa fa-google fa-fw">
+          </i></center>
+        </a>
+        <br>
+        <br>
+         <a href="#" class="EPAM btn">
+           <center>&lt EPAM LOGIN &gt </center>
+        </a>
+      </div>
+  </form>
+</fieldset>
+
+</center>
+</body>
+</html>
+
